@@ -1,9 +1,9 @@
-<html ng-app>
+<html ng-app="trips">
   <head>
     <title>Learning AngularJS</title>
     <link rel="icon" href="../../favicon.ico">
-    <link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../../styles/samples.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/styles/samples.css" rel="stylesheet">
   </head>
 
   <body>
@@ -18,14 +18,20 @@
     <div class="container">
 
       <!-- Our Code goes here -->
-      <section class="sample">
-      </section>
+      <ng-view></ng-view>
 
     </div>
 
-
-
     <!-- AngularJS -->
-    <script src="../../bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+
+    <!-- welcome/ -->
+    <script src="./components/welcome/trips.module.js" charset="utf-8"></script>
+    <script src="./components/welcome/trips.routes.js" charset="utf-8"></script>
+    <script src="./components/welcome/trips.controller.js" charset="utf-8"></script>
+    <script src="./components/welcome/trips.service.js" charset="utf-8"></script>
+    <script src="./components/welcome/trips.factory.js" charset="utf-8"></script>
+
   </body>
 </html>

@@ -1,0 +1,17 @@
+<section class="sample">
+
+  <form ng-submit="trips.getTrips(country)" class="form form-inline">
+    <input ng-model="country" class="form-control">
+    <button ng-click="trips.getTrips(country)" class="btn btn-primary">Load trips</button>
+  </form>
+
+  <hr>
+
+  <table class="table table-striped">
+    <tr ng-repeat="trip in trips.entries">
+      <td>{{ trip.city }}</td>
+      <td>{{ trip.country }}</td>
+    </tr>
+  </table>
+
+</section>
