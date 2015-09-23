@@ -4,6 +4,8 @@
     <link rel="icon" href="../favicon.ico">
     <link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="../../styles/samples.css" rel="stylesheet">
+
+    <script src="../../bower_components/angular/angular.js"></script>
   </head>
 
   <body>
@@ -19,7 +21,9 @@
 
       <!-- Our Code goes here -->
       <section class="sample" ng-controller="controller as ctrl">
-        {{ ctrl.name }}
+        <div ng-cloak>{{ ctrl.name }}</div>
+
+        <p ng-bind="ctrl.name"></p>
       </section>
 
     </div>
@@ -27,7 +31,7 @@
 
 
     <!-- AngularJS -->
-    <script src="../../bower_components/angular/angular.js"></script>
+
     <script src="./context.js"></script>
   </body>
 </html>
