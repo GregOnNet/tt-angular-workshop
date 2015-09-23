@@ -11,10 +11,9 @@
     var vm = this;
 
     vm.entries = [];
+    vm.getTrips = getTrips;
 
-    getGermanTrips();
-
-    function getGermanTrips() {
+    function getTrips() {
       vm.entries = tripsService.getTripsOfCountry('Germany');
     }
   }

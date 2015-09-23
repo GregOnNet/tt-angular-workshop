@@ -11,11 +11,10 @@
     var vm = this;
 
     vm.entries = [];
+    vm.getTrips = getTrips;
 
-    getGermanTrips();
-
-    function getGermanTrips() {
-      vm.entries = tripsService.getTripsOfCountry('Germany');
+    function getTrips(country) {
+      vm.entries = tripsService.getTripsOfCountry(country);
     }
   }
 }());
