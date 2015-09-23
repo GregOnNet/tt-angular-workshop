@@ -1,6 +1,6 @@
 (function() {
   angular
-    .module('factories', [])
+    .module('factories')
     .controller('DirectivesController', Controller);
 
   Controller.$inject = ['trainees'];
