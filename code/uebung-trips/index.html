@@ -20,11 +20,16 @@
       <!-- Our Code goes here -->
       <section class="sample" ng-controller="tripsController as trips">
 
-        <input ng-model="country"
-               class="form-control">
-        <button ng-click="trips.getTrips(country)"
-                class="btn btn-primary">Load trips</button>
+        <form ng-submit="trips.getTrips(country)"
+              class="form form-inline">
+          <input ng-model="country"
+                 class="form-control">
+          <button ng-click="trips.getTrips(country)"
+                  class="btn btn-primary">Load trips</button>
+        </form>
+
         <hr>
+
         <table class="table table-striped">
           <tr ng-repeat="trip in trips.entries">
             <td>{{ trip.city }}</td>
