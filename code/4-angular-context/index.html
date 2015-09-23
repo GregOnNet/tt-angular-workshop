@@ -21,9 +21,8 @@
 
       <!-- Our Code goes here -->
       <section class="sample" ng-controller="controller as ctrl">
-        <div ng-cloak>{{ ctrl.name }}</div>
-
-        <p ng-bind="ctrl.name"></p>
+        <div ng-cloak>{{ ::ctrl.name }}</div>
+        <p ng-bind="::ctrl.name"></p>
       </section>
 
     </div>
