@@ -12,6 +12,10 @@
         templateUrl: 'components/trips/trips.html',
         controller: 'tripsController',
         controllerAs: 'trips'
-      });
+      })
+      .when('/welcome', {
+        templateUrl: 'components/welcome/welcome.html'
+      })
+      .otherwise('/');
   }
 }());
