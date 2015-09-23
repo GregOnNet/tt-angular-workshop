@@ -1,17 +1,20 @@
-angular
-  .module('directives', [])
-  .controller('DirectivesController', Controller);
+(function() {
 
-function Controller() {
+  angular
+    .module('directives', [])
+    .controller('DirectivesController', Controller);
 
-  this.people = [{
-    firstname: 'Igor',
-    lastname: 'Minar'
-  },{
-    firstname: 'Dan',
-    lastname: 'Whalin'
-  }, {
-    firstname: 'John',
-    lastname: 'Papa'
-  }];
-}
+  function Controller() {
+
+    this.people = [{
+      firstname: 'Igor',
+      lastname: 'Minar'
+    },{
+      firstname: 'Dan',
+      lastname: 'Whalin'
+    }, {
+      firstname: 'John',
+      lastname: 'Papa'
+    }];
+  }
+}());
