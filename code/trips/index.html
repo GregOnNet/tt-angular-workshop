@@ -1,0 +1,45 @@
+<html ng-app="trips">
+  <head>
+    <title>Learning AngularJS</title>
+    <link rel="icon" href="../../favicon.ico">
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../styles/samples.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Sample</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Our Code goes here -->
+      <section class="sample" ng-controller="tripsController as trips">
+
+        <table class="table table-striped">
+          <tr ng-repeat="trip in trips.entries">
+            <td>{{ trip.city }}</td>
+            <td>{{ trip.country }}</td>
+          </tr>
+        </table>
+
+      </section>
+
+    </div>
+
+
+
+    <!-- AngularJS -->
+    <script src="../../bower_components/angular/angular.js"></script>
+
+    <!-- App -->
+    <script src="./trips.module.js" charset="utf-8"></script>
+    <script src="./trips.controller.js" charset="utf-8"></script>
+    <script src="./trips.service.js" charset="utf-8"></script>
+    <script src="./trips.factory.js" charset="utf-8"></script>
+  </body>
+</html>
