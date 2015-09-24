@@ -23,9 +23,10 @@
         <tt-shared-scope></tt-shared-scope>
         <tt-isolated-scope
            info="{{ vm.message }}"
-           age="vm.age"></tt-isolated-scope>
+           age="vm.age"
+           greet="vm.greet(vm.age)"></tt-isolated-scope>
         <div>
-          Controller: 
+          Controller:
           <input ng-model="vm.age">
         </div>
         <hr>

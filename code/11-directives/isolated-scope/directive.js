@@ -12,7 +12,9 @@
         // Attributname
         message: '@info',
         // Two way binding
-        age: '='
+        age: '=',
+        // Callback function
+        greet: '&'
       },
       templateUrl: './isolated-scope/template.html'
     };
