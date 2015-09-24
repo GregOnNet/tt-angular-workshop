@@ -1,0 +1,35 @@
+<html ng-app="directivesDemo">
+  <head>
+    <title>Learning AngularJS</title>
+    <link rel="icon" href="../../favicon.ico">
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../styles/samples.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Sample</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Our Code goes here -->
+      <section class="sample" ng-controller="directivesController as vm">
+        <tt-shared-scope></tt-shared-scope>
+      </section>
+
+    </div>
+
+    <!-- AngularJS -->
+    <script src="../../bower_components/angular/angular.js"></script>
+
+    <!-- Directives -->
+    <script src="./directives.module.js" charset="utf-8"></script>
+    <script src="./directives.controller.js" charset="utf-8"></script>
+    <script src="./directive.shared-scope.js" charset="utf-8"></script>
+  </body>
+</html>
