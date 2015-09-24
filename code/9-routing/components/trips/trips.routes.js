@@ -13,9 +13,6 @@
         controller: 'tripsController',
         controllerAs: 'trips'
       })
-      .when('/welcome', {
-        templateUrl: 'components/welcome/welcome.html'
-      })
       .otherwise('/');
   }
 }());
