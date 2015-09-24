@@ -7,13 +7,15 @@
 
   function ttTraveller() {
     return {
+      require: 'traveller',
       scope: {
         traveller: "="
       },
       templateUrl: './transclusion/ttTraveller.html',
       controller: TravellerController,
       controllerAs: 'tt',
-      bindToController: true
+      bindToController: true,
+      link: function() {}
     };
   }
 
