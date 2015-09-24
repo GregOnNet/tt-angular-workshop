@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-   .module('trips', [
-     'core'
+   .module('core', [
+     'ngRoute'
    ]);
 }());

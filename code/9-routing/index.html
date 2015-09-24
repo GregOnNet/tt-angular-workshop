@@ -1,4 +1,4 @@
-<html ng-app="trips">
+<html ng-app="app">
   <head>
     <title>Learning AngularJS</title>
     <link rel="icon" href="../../favicon.ico">
@@ -36,6 +36,12 @@
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-route/angular-route.js"></script>
 
+    <!-- core -->
+    <script src="./components/core/core.module.js" charset="utf-8"></script>
+
+    <!-- app -->
+    <script src="./app.js" charset="utf-8"></script>
+
     <!-- trips -->
     <script src="./components/trips/trips.module.js" charset="utf-8"></script>
     <script src="./components/trips/trips.routes.js" charset="utf-8"></script>
@@ -44,6 +50,7 @@
     <script src="./components/trips/trips.factory.js" charset="utf-8"></script>
 
     <!-- welcome -->
+    <script src="./components/welcome/welcome.module.js" charset="utf-8"></script>
     <script src="./components/welcome/welcome.routes.js" charset="utf-8"></script>
     <script src="./components/welcome/welcome.controller.js" charset="utf-8"></script>
 

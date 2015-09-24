@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-   .module('trips', [
+   .module('welcome', [
      'core'
    ]);
 }());
