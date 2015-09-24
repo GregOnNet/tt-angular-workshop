@@ -25,6 +25,15 @@
               | filter:'Nad'
               | join:'-____-'}}
         </div>
+        <div class="alert alert-success">
+          {{ namesOf.joined }}
+        </div>
+
+        <!-- Ausgabe der sortierten Namen -->
+        <ul class="list">
+          <li ng-repeat="name in namesOf.sorted">{{ name }}</li>
+        </ul>
+
       </section>
 
     </div>
