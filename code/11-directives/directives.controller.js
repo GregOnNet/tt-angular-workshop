@@ -7,7 +7,8 @@
 
   function DirectivesController() {
     var vm = this;
-    
+
     vm.message = 'Our first directive goes here.';
+    vm.age = 26;
   }
 }());

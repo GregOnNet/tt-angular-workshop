@@ -10,7 +10,9 @@
     return {
       scope: {
         // Attributname
-        message: '@'
+        message: '@info',
+        // Two way binding
+        age: '='
       },
       templateUrl: './isolated-scope/template.html'
     };
