@@ -1,54 +1,69 @@
 <html ng-app="directivesDemo">
-  <head>
-    <title>Learning AngularJS</title>
-    <link rel="icon" href="../../favicon.ico">
-    <link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="../../styles/samples.css" rel="stylesheet">
-  </head>
 
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Sample</a>
-        </div>
-      </div>
-    </nav>
+<head>
+  <title>Learning AngularJS</title>
+  <link rel="icon" href="../../favicon.ico">
+  <link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="../../styles/samples.css" rel="stylesheet">
+</head>
 
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Sample</a>
+      </div>
+    </div>
+  </nav>
 
-      <!-- Our Code goes here -->
-      <section class="sample">
+  <div class="container">
 
-        <div ng-controller="directivesController as vm">
-          <tt-shared-scope></tt-shared-scope>
-          <tt-isolated-scope
-             info="{{ vm.message }}"
-             age="vm.age"
-             greet="vm.greet(vm.age)"></tt-isolated-scope>
-          <div>
-            Controller:
-            <input ng-model="vm.age">
-          </div>
-          <hr>
+    <!-- Our Code goes here -->
+    <section class="sample">
+
+      <div ng-controller="directivesController as vm">
+        <tt-shared-scope></tt-shared-scope>
+        <tt-isolated-scope info="{{ vm.message }}" age="vm.age" greet="vm.greet(vm.age)"></tt-isolated-scope>
+        <div>
+          Controller:
+          <input ng-model="vm.age">
         </div>
+        <hr>
+      </div>
 
-        <tt-controller></tt-controller>
+      <tt-controller></tt-controller>
+
+      <hr>
+
+      <section ng-controller="travellerController as ctrl">
+
+        <tt-toolbar>
+          <tt-traveller ng-repeat="traveller in ctrl.travellers" traveller="traveller">
+          </tt-traveller>
+        </tt-toolbar>
 
       </section>
 
+    </section>
 
-    </div>
 
-    <!-- AngularJS -->
-    <script src="../../bower_components/angular/angular.js"></script>
+  </div>
 
-    <!-- Directives -->
-    <script src="./directives.module.js" charset="utf-8"></script>
-    <script src="./directives.controller.js" charset="utf-8"></script>
-    <script src="./shared-scope/directive.shared-scope.js" charset="utf-8"></script>
-    <script src="./isolated-scope/directive.js" charset="utf-8"></script>
-    <script src="./using-a-controller/ttController.directive.js" charset="utf-8"></script>
-    <script src="./using-a-controller/ttDirective.controller.js" charset="utf-8"></script>
-  </body>
+  <!-- AngularJS -->
+  <script src="../../bower_components/angular/angular.js"></script>
+
+  <!-- Directives -->
+  <script src="./directives.module.js" charset="utf-8"></script>
+  <script src="./directives.controller.js" charset="utf-8"></script>
+  <script src="./shared-scope/directive.shared-scope.js" charset="utf-8"></script>
+  <script src="./isolated-scope/directive.js" charset="utf-8"></script>
+  <script src="./using-a-controller/ttController.directive.js" charset="utf-8"></script>
+  <script src="./using-a-controller/ttDirective.controller.js" charset="utf-8"></script>
+
+  <!-- Translusion sample -->
+  <script src="./transclusion/traveller.controller.js" charset="utf-8"></script>
+  <script src="./transclusion/ttToolbar.direcive.js" charset="utf-8"></script>
+  <script src="./transclusion/ttTraveller.directive.js" charset="utf-8"></script>
+</body>
+
 </html>
