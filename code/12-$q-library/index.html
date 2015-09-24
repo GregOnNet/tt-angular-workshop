@@ -1,0 +1,45 @@
+<html ng-app="qDemo">
+  <head>
+    <title>Learning AngularJS</title>
+    <link rel="icon" href="../../favicon.ico">
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="../../styles/samples.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Sample</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Our Code goes here -->
+      <section class="sample" ng-controller="asyncController as ctrl">
+        <div class="alert alert-info">
+          {{ ctrl.statusMessage }}
+        </div>
+        <button
+          ng-click="ctrl.resolve()"
+          class="btn btn-primary">Resolve</button>
+        <button
+          ng-click="ctrl.reject()"
+          class="btn btn-danger">Reject</button>
+      </section>
+
+    </div>
+
+
+
+    <!-- AngularJS -->
+    <script src="../../bower_components/angular/angular.js"></script>
+
+    <!-- App -->
+    <script src="./async.module.js" charset="utf-8"></script>
+    <script src="./async.controller.js" charset="utf-8"></script>
+    <script src="./async.service.js" charset="utf-8"></script>
+  </body>
+</html>
