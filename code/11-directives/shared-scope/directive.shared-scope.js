@@ -11,7 +11,7 @@
     // directive definition object
     return {
 
-      templateUrl: './directive.shared-scope.html'
+      templateUrl: './shared-scope/directive.shared-scope.html'
     };
   }
 }());

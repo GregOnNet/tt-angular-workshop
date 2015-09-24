@@ -19,7 +19,9 @@
 
       <!-- Our Code goes here -->
       <section class="sample" ng-controller="directivesController as vm">
+
         <tt-shared-scope></tt-shared-scope>
+        <tt-isolated-scope message="{{ vm.message }}"></tt-isolated-scope>
       </section>
 
     </div>
@@ -30,6 +32,7 @@
     <!-- Directives -->
     <script src="./directives.module.js" charset="utf-8"></script>
     <script src="./directives.controller.js" charset="utf-8"></script>
-    <script src="./directive.shared-scope.js" charset="utf-8"></script>
+    <script src="./shared-scope/directive.shared-scope.js" charset="utf-8"></script>
+    <script src="./isolated-scope/directive.js" charset="utf-8"></script>
   </body>
 </html>
