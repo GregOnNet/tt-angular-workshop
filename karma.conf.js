@@ -22,6 +22,8 @@ module.exports = function(config) {
       // App
       './code/**/*.module.js',
       './code/**/*.js',
+      // App -> Templates
+      './code/**/*.html',
       // Tests
       './tests/**/*.spec.js'
     ],
@@ -35,6 +37,14 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      './code/**/*.html': ['ng-html2js']
+    },
+
+    ngHtml2JsPreprocessor: {
+      moduleName: 'templates',
+      cacheIdFromPath: function(filepath) {
+        return filepath.replace('code/11-directives/', './');
+      }
     },
 
 
