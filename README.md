@@ -3,6 +3,17 @@
 AngularJS ist derzeit eines der modernsten Frameworks, um Web Anwendungen zu erstellen.
 Nichts desto trotz ist es schwer zu lernen. Um AngularJS richtig einzusetzen, muss man das Framework verstehen.
 
+## Interessante Videos
+
+- [Reusable Components in AngularJS - Desing Patterns](https://youtu.be/dF_ObGgzGE8)
+- [18 Tips for AngularJS Architects](https://youtu.be/MpI3HKDVZm0)
+
+### ng-wat
+
+Eine kritische, aber lustige Auseinandersetzung mit dem AngularJS-Framework.
+- [Ng-Wat Talk](https://youtu.be/M_Wp-2XA9ZU)
+
+
 ## Ziel
 
 - Basiskonzepte von Angular verstehen.
