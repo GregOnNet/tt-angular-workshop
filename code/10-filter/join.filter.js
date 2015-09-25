@@ -10,9 +10,11 @@
 
   function join() {
     return function(list, separator) {
-      var sep = separator || ',';
+      if(list === undefined || !Array.isArray(list))
+        return list;
 
-      return list.join(sep);
+      list = list.filter(function(n){ return n !== undefined; });
+      return list.join(separator || ',');
     };
   }
 }());
