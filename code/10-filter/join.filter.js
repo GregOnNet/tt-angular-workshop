@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('filterDemo', [])
+    .module('filterDemo')
     .filter('join', join);
 
   // ['Joe', 'Igor', 'Slatko']      -> 'Joe  Igor  Slatko'
