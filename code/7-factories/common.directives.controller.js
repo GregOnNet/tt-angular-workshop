@@ -3,11 +3,17 @@
     .module('factories')
     .controller('DirectivesController', Controller);
 
-  Controller.$inject = ['trainees'];
+  Controller.$inject = ['$scope','trainees'];
 
   // Konstruktorfunktion
-  function Controller(a) {
+  function Controller($scope, a) {
 
     this.people = a.getAll();
+
+    this.do = doIt;
+
+    function doIt() {
+      $scope.$emit('REQUEST_STARTED', 1);
+    }
   }
 }());
