@@ -28,4 +28,14 @@ describe('Using movies.ng-book.com', function() {
       ).not.toBe(title);
     });
   });
+
+  it('should have a branding image', function() {
+    element.all(by.repeater('movie in movies')).first().click();
+    element(by.linkText('TRAILER')).click();
+
+    var EC = protractor.ExpectedConditions;
+    var brandingImage = element(by.css('img'));
+    browser.wait(EC.presenceOf(brandingImage), 1000 * 6);
+    expect(brandingImage.isPresent()).toBeTruthy();
+  });
 });
