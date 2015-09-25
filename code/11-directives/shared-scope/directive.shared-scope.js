@@ -11,7 +11,8 @@
     // directive definition object
     return {
 
-      templateUrl: './shared-scope/directive.shared-scope.html'
+      template: '<p class="lead">{{ vm.message }}</p>',
+      // templateUrl: './shared-scope/directive.shared-scope.html'
     };
   }
 }());
