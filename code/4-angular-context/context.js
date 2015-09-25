@@ -2,6 +2,8 @@ angular
   .module('digest', [])
   .controller('controller', controller);
 
+controller.$inject = ['$timeout'];
+
 function controller($timeout) {
   var vm = this;
 
