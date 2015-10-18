@@ -1,4 +1,4 @@
-// IIFE Intermediate invoked function expression
+// IIFE immediately-invoked function expression
 (function() {
   'use strict';
 
